@@ -2,7 +2,7 @@
 ![Hotstar Logo](https://github.com/adityanairrr/Disney-Hotstar-SQL-Project/blob/main/Disney%2BHotstar.jpg)
 
 ## Overview
-This project involves a comprehensive analysis of Disney Hotstar's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, Business problems, Solutions, Findings, and Conclusions.
+This project involves a comprehensive analysis of Disney Hotstar's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, Business problems and Solutions.
 
 ## Datasets
 The Data of this Project is sourced from Kaggle:
@@ -152,3 +152,10 @@ GROUP BY actor
 ORDER BY COUNT(*) DESC
 LIMIT 10;
 ```
+
+## Author - Aditya Nair
+This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
+
+## Connect With me On Linked In
+
+- **Linked In:** [Connect](www.linkedin.com/in/aditya-nair-489201245)
