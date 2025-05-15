@@ -41,12 +41,12 @@ FROM hotstar
 GROUP BY 1;
 ```
 
-### List of all movies released in a specific year
+### 2. List of all movies released in a specific year
 ```sql
 SELECT * FROM hotstar WHERE release_year = 2018;
 ```
 
-### List of Directors with most content 
+### 3. List of Directors with most content 
 ```sql
 SELECT
     director,
@@ -62,7 +62,7 @@ ORDER BY
 LIMIT 10;
 ```
 
-### List of Top 10 Countries with most Content
+### 4. List of Top 10 Countries with most Content
 ```sql
 SELECT country, COUNT(*) AS content_count
 FROM hotstar
@@ -71,7 +71,7 @@ ORDER BY content_count DESC
 LIMIT 10;
 ```
 
-### Identify the Longest Movie
+### 5. Identify the Longest Movie
 ```sql
 SELECT 
     *
@@ -80,7 +80,7 @@ WHERE type = 'Movie'
 ORDER BY SPLIT_PART(duration, ' ', 1)::INT DESC;
 ```
 
-### Select all Contents where Director = Robert Vince
+### 6. Select all Contents where Director = Robert Vince
 ```sql
 SELECT *
 FROM (
@@ -92,7 +92,7 @@ FROM (
 WHERE director_name = 'Robert Vince';
 ```
 
-### List of all Tv Shows with more than 3 seasons
+### 7. List of all Tv Shows with more than 3 seasons
 ```sql
 SELECT *
 FROM hotstar
@@ -100,7 +100,7 @@ WHERE type = 'TV Show'
   AND SPLIT_PART(duration, ' ', 1)::INT > 5;
 ```
 
-### Count the No of items in each genres
+### 8. Count the No of items in each genres
 ```sql
   SELECT 
     UNNEST(STRING_TO_ARRAY(listed_in, ',')) AS genre,
@@ -109,7 +109,7 @@ FROM hotstar
 GROUP BY 1;
 ```
 
-### Find each year and the average numbers of content release in United Kingdom on hotstar.
+### 9. Find each year and the average numbers of content release in United Kingdom on hotstar.
 ```sql
 SELECT 
     country,
@@ -126,14 +126,14 @@ ORDER BY avg_release DESC
 LIMIT 10;
 ```
 
-### List of Contents without a director
+### 10. List of Contents without a director
 ```sql
 SELECT * 
 FROM hotstar
 WHERE director IS NULL;
 ```
 
-### Find How Many Movies Actor 'Tom Hanks' Appeared in the Last 20 Years
+### 11. Find How Many Movies Actor 'Tom Hanks' Appeared in the Last 20 Years
 ```sql
 SELECT * 
 FROM hotstar
@@ -141,7 +141,7 @@ WHERE casts LIKE '%Tom Hanks%'
   AND release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 20;
 ```
 
-### Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in United States
+### 12. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in United States
 ```sql
  SELECT 
     UNNEST(STRING_TO_ARRAY(casts, ',')) AS actor,
