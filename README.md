@@ -27,3 +27,13 @@ CREATE TABLE hotstar
     duration     VARCHAR(15),
     listed_in    VARCHAR(250),
     description  VARCHAR(550)
+
+## Business Problems and Solutions
+
+### 1. Count the Number of Movies vs TV Shows
+```sql
+SELECT 
+    type,
+    COUNT(*)
+FROM hotstar
+GROUP BY 1;
