@@ -6,4 +6,5 @@ This project involves a comprehensive analysis of Disney Hotstar's movies and TV
 
 ## Datasets
 The Data of this Project is sourced from Kaggle:
-**Dataset Link:** [Content Datasets](https://www.kaggle.com/datasets/shivamb/disney-movies-and-tv-shows)
+
+- **Dataset Link:** [Content Datasets](https://www.kaggle.com/datasets/shivamb/disney-movies-and-tv-shows)
