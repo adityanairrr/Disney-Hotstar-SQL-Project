@@ -156,6 +156,4 @@ LIMIT 10;
 ## Author - Aditya Nair
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
 
-## Connect with Me 
-
-**:[Connect](www.linkedin.com/in/aditya-nair-489201245)**
+Thank you for your support
