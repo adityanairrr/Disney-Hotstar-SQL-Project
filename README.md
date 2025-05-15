@@ -1,1 +1,2 @@
 # Disney Hotstar
+![Hotstar Logo]{}
