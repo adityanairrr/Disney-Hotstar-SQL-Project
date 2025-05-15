@@ -10,8 +10,8 @@ The Data of this Project is sourced from Kaggle:
 - **Dataset Link:** [Content Datasets](https://www.kaggle.com/datasets/shivamb/disney-movies-and-tv-shows)
 
 ## Schema
-  '''sql
-
+  
+  ```sql
   DROP TABLE IF EXISTS hotstar;
 CREATE TABLE hotstar
 (
