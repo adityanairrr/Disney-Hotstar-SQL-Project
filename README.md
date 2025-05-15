@@ -1,1 +1,1 @@
-# Disney-Hotstar-SQL-Project
+# Disney-Hotstar
